@@ -9,8 +9,6 @@ public class GradeAvgPt1 {
 	
 	{
 		
-		DecimalFormat df = new DecimalFormat();
-		
 		//Declaration
 		int n_1, n_2, n_3, n_4, n_5, sum;
 		
@@ -51,7 +49,5 @@ public class GradeAvgPt1 {
 		//Print Average grade
 		
 		System.out.print("The average grade is : " + avg);
-		
-		
 	}
 }
