@@ -9,11 +9,15 @@ public class GradeAvgPt2 {
 	public static void main(String[] args)
 	
 	{
+		//declaration
 		int totgrade;
 		double avg;
-
+		
+		//formatting
 		NumberFormat percent = NumberFormat.getPercentInstance() ;
-
+		NumberFormat decimal = NumberFormat.getNumberInstance() ;
+		
+		//preparing for user input
 		Scanner UserInput = new Scanner(System.in);
 		
 		System.out.print("Enter the First grade: ");
@@ -31,9 +35,15 @@ public class GradeAvgPt2 {
 		System.out.print("Enter the fifth grade: ");
 		totgrade += UserInput.nextInt();
 		
-		avg = (double)totgrade/500;
+		//calculate average
+		avg = totgrade/500;
 		
-		System.out.print("Your average grade is: " + percent.format(avg) );
+		//Show average grade as a percentage
+		System.out.print("the average grade is: " + percent.format(avg) );
+		
+		//Receiving user input]
+		
+		
 		
 	}
 }

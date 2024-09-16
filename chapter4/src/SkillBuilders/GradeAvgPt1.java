@@ -9,11 +9,16 @@ public class GradeAvgPt1 {
 	
 	{
 		
+		//Declaration
 		int n_1, n_2, n_3, n_4, n_5, sum;
 		
 		double avg ;
 		
+		//Prep for User Input
+		
 		Scanner UserInput = new Scanner(System.in);
+		
+		//User Prompts and their inputs for five entries
 		
 		System.out.print("Enter the first grade: ");
 		
@@ -35,10 +40,13 @@ public class GradeAvgPt1 {
 		
 		n_5 = UserInput.nextInt();
 		
+		//Calculate Average grade
 		
 		sum = n_1 + n_2 + n_3 + n_4 +n_5;
 		
 		avg = (double)sum/5;
+				
+		//Print Average grade
 		
 		System.out.print("The average grade is : " + avg);
 	}

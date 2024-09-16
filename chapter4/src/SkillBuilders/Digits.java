@@ -15,6 +15,6 @@ public static void main(String[] args)
 	int t = n / 10;
 	int o = n % 10;
 	
-	System.out.print("The value of the tens is " + t + " and the value of the ones is " + o + ".");
+	System.out.print("The value of the tens is "+ t +" and the value of the ones is "+o+".");
 }
 }
