@@ -8,8 +8,7 @@ public class DigitsE6 {
 
 	Program: DigitsE6.java          Last Date of this Revision: 9/17/24
 
-	Purpose: An application that uses nested for loops to output a table that diplays number in 
-	 multiples of ten.
+	Purpose: An application which tells you the value of the hundreds column, tens column and ones column when given a 3 digit integer
 
 	Author: Aryan Kapoor, 
 	School: CHHS
@@ -59,7 +58,8 @@ The value of the hundreds is 1, the value of the tens is 2, and the value of the
 Please enter a three digit number: 763
 The value of the hundreds is 7, the value of the tens is 6, and the value of the ones is 3.
 
-
+Please enter a three digit number: 11
+The value of the hundreds is 0, the value of the tens is 1, and the value of the ones is 1.
 
  */
 
