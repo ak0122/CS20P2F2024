@@ -10,11 +10,11 @@ public class ProjectE11 {
 
 	Program: ProjectE11.java          Last Date of this Revision: September 19, 2024
 
-	Purpose: An application which 
+	Purpose: An application which outputs the proportion of time you spent on a Java project as a percentage.
 
-	Author: Your Name, 
+	Author: Aryan Kapoor, 
 	School: CHHS
-	Course: Computer Programming ??
+	Course: Computer Programming 20
 	 
 
 	*/
@@ -25,8 +25,7 @@ public class ProjectE11 {
 		double d, c, db, t, totaltime;
 		
 		
-		//Create formats to round and find percentages
-		DecimalFormat df = new DecimalFormat("0.00");
+		//Create a format to find percentages
 		
 		NumberFormat percent = NumberFormat.getPercentInstance();
 		
@@ -34,9 +33,9 @@ public class ProjectE11 {
 		Scanner UserInput = new Scanner(System.in);
 		
 		//Get Users Inputs after giving the user Instructions
-		System.out.print("Enter the times it takes you to complete the following tasks in hours.");
+		System.out.print("Enter the time it takes you to complete the following tasks in hours.");
 		
-		System.out.print("Designing: ");
+		System.out.print("\nDesigning: ");
 		d = UserInput.nextDouble();
 
 		System.out.print("Coding: ");
@@ -48,10 +47,21 @@ public class ProjectE11 {
 		System.out.print("Testing: ");
 		t = UserInput.nextDouble();
 		
+		//Find total time taken for percentages
 		totaltime = d+c+db+t ;
 		
+		//Find the proportion of time each task takes
+		d = d/totaltime;
+		c= c/totaltime;
+		db = db/totaltime;
+		t = t/totaltime;
 		
-		
+		//Print out the data we calculated
+		System.out.print("\nTask             % Time");
+		System.out.print("\nDesigning          "+ percent.format(d));
+		System.out.print("\nCoding             "+ percent.format(c));
+		System.out.print("\nDebugging          "+ percent.format(db));
+		System.out.print("\nTesting            "+ percent.format(t));
 	}
 }
 
