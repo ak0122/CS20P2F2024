@@ -57,11 +57,42 @@ public class ProjectE11 {
 		t = t/totaltime;
 		
 		//Print out the data we calculated
-		System.out.print("\nTask             % Time");
+		System.out.print("\nTask:              %Time:");
 		System.out.print("\nDesigning          "+ percent.format(d));
 		System.out.print("\nCoding             "+ percent.format(c));
 		System.out.print("\nDebugging          "+ percent.format(db));
 		System.out.print("\nTesting            "+ percent.format(t));
+		
+		/*Screen Dump
+		 TestCase1
+		Enter the time it takes you to complete the following tasks in hours.
+		Designing: 14
+		Coding: 23
+		Debugging: 15
+		Testing: 16
+
+		Task:              %Time:
+		Designing          21%
+		Coding             34%
+		Debugging          22%
+		Testing            24%
+		
+		TestCase2
+		Enter the time it takes you to complete the following tasks in hours.
+		Designing: 0
+		Coding: 
+			14
+		Debugging: 15
+		Testing: 20
+
+		Task:              %Time:
+		Designing          0%
+		Coding             29%
+		Debugging          31%
+		Testing            41%
+		
+		*/
+		
 	}
 }
 

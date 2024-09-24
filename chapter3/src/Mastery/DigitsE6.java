@@ -52,9 +52,6 @@ public class DigitsE6 {
 
 /* Screen Dump
  * 
-Please enter a three digit number: 123
-The value of the hundreds is 1, the value of the tens is 2, and the value of the ones is 3.
-
 Please enter a three digit number: 763
 The value of the hundreds is 7, the value of the tens is 6, and the value of the ones is 3.
 
