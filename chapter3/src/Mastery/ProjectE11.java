@@ -57,7 +57,7 @@ public class ProjectE11 {
 		t = t/totaltime;
 		
 		//Print out the data we calculated
-		System.out.print("\nTask:              %Time:");
+		System.out.print("\nTask:              % Time:");
 		System.out.print("\nDesigning          "+ percent.format(d));
 		System.out.print("\nCoding             "+ percent.format(c));
 		System.out.print("\nDebugging          "+ percent.format(db));
