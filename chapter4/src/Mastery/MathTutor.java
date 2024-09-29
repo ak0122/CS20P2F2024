@@ -1,8 +1,8 @@
-package mathtutor;
+package Mastery;
 import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.Scanner;
-public class mathtutor {
+public class MathTutor {
 
 		public static void main(String[] args)
 		{
