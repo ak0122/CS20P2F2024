@@ -77,4 +77,16 @@ public class MathTutor {
 				}	
 			}
 		}
+/* Screen Dump
+ * Case 1:
+ * What is 1/3 to 2 decimal places? 0.33
+You got the answer RIGHT! Good Job.
 
+Case 2:
+What is 3/7 to 2 decimal places? 0.42
+You got the answer WRONG.
+
+Case 3:
+What is 8+10? 18
+You got the answer RIGHT! Good Job.
+*/
