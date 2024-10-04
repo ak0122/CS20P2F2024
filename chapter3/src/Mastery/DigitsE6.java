@@ -1,9 +1,3 @@
-package Mastery;
-
-import java.util.Scanner;
-
-public class DigitsE6 {
-	
 	/*
 
 	Program: DigitsE6.java          Last Date of this Revision: 9/17/24
@@ -16,6 +10,11 @@ public class DigitsE6 {
 	
 	*/
 
+package Mastery;
+
+import java.util.Scanner;
+
+public class DigitsE6 {
 
 	public static void main(String[] args)
 	{
