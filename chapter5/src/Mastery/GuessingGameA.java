@@ -29,6 +29,7 @@ public class GuessingGameA {
 				
 				if (cpuguess == userguess) {
 					System.out.println("You Won!");
+					UserInput.close();
 				}
 				else {
 					System.out.println("Better luck next time.");

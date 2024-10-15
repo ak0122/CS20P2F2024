@@ -15,6 +15,7 @@ public class PrimeNumberA {
 		//Get the User to type a random Number
 		System.out.print("Please Enter a Number: ");
 		num = UserInput.nextInt();
+		UserInput.close();
 		
 		//keep finding the remainder when dividing num by 2-7 while the remainder is non-zero.
 		do 

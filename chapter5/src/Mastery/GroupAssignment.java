@@ -22,6 +22,8 @@ public class GroupAssignment {
 
 	lastn = lastn.toLowerCase();
 	
+	UserInput.close();
+	
 	//getting the first letter in last name:
 	char lastnameinitial = lastn.charAt(0);
 	switch (lastnameinitial) {
@@ -56,11 +58,5 @@ public class GroupAssignment {
 	case 'z': System.out.print("You are in Group 3"); break;
 
 	}
-	
-
-	
-	
-	
-				
 	}
 }
