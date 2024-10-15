@@ -25,7 +25,7 @@ public class GuessingGameA {
 				System.out.println("Enter a number between 1 and 20: ");
 				userguess = UserInput.nextInt();
 				
-				//If statement to compare user to cpu guess
+				//If-Statement to compare user to cpu guess
 				
 				if (cpuguess == userguess) {
 					System.out.println("You Won!");

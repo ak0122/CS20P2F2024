@@ -12,7 +12,7 @@ public class PrimeNumberA {
 		//Prepare for User Input
 		Scanner UserInput = new Scanner(System.in);
 		
-		//Get the User to type a random number
+		//Get the User to type a random Number
 		System.out.print("Please Enter a Number: ");
 		num = UserInput.nextInt();
 		
