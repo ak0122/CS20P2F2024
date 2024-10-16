@@ -1,9 +1,10 @@
 package Mastery;
 
-public class test {
+public class MetricConversion {
 
 	public static void main(String[] args)
+	
 	{
-		System.out.print("Hello!");
+		System.out.print("Hello World")
 	}
 }
