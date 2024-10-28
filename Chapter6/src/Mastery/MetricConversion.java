@@ -13,7 +13,7 @@ public class MetricConversion {
 		
 		cm = 2.54*num;
 
-		System.out.print(num+ "inches equals "+df.format(cm)+ " centimeters ");
+		System.out.print(num+ " inches equals "+df.format(cm)+ " centimeters ");
 	}
 	
 	//method for feet to centimeters conversion
@@ -24,7 +24,7 @@ public class MetricConversion {
 			
 			cm = 30.48*num;
 
-			System.out.print(num+ "feet equals "+df.format(cm)+ " centimeters ");
+			System.out.print(num+ " feet equals "+df.format(cm)+ " centimeters ");
 		}
 		
 		//method for Yards to Meters conversion
@@ -35,7 +35,7 @@ public class MetricConversion {
 			
 			m = 0.9144*num;
 
-			System.out.print(num+ "yards equals "+df.format(m)+ " meters ");
+			System.out.print(num+ " yards equals "+df.format(m)+ " meters ");
 		}
 		
 		//method for miles to kilometers conversion
@@ -46,18 +46,18 @@ public class MetricConversion {
 					
 					km = 1.6093*num;
 
-					System.out.print(num+ "miles equals "+df.format(km)+ " kilometers ");
+					System.out.print(num+ " miles equals "+df.format(km)+ " kilometers ");
 				}
 				
 				//method for Centimeters to Inches conversion
-				public static void centimetertoInches(double num)
+				public static void centimeterstoInches(double num)
 				{
 					double inch;
 					DecimalFormat df = new DecimalFormat("0.00");
 					
-					inch = 0.9144*num;
+					inch = 0.393701*num;
 
-					System.out.print(num+ "centimeters equals "+df.format(inch)+ " inches ");
+					System.out.print(num+ " centimeters equals "+df.format(inch)+ " inches ");
 				}
 				
 				//method for Centimeters to Feet conversion
@@ -66,9 +66,9 @@ public class MetricConversion {
 					double ft;
 					DecimalFormat df = new DecimalFormat("0.00");
 					
-					ft = 0.9144*num;
+					ft = 0.0328084*num;
 
-					System.out.print(num+ "centimeters equals "+df.format(ft)+ " feet ");
+					System.out.print(num+ " centimeters equals "+df.format(ft)+ " feet ");
 				}
 				
 				//method for Meters to Yards conversion
@@ -77,9 +77,9 @@ public class MetricConversion {
 					double yd;
 					DecimalFormat df = new DecimalFormat("0.00");
 					
-					yd = 0.9144*num;
+					yd = 1.09361*num;
 
-					System.out.print(num+ "meters equals "+df.format(yd)+ " yards");
+					System.out.print(num+ " meters equals "+df.format(yd)+ " yards");
 				}
 				
 				//method for Kilometers to Miles conversion
@@ -88,8 +88,49 @@ public class MetricConversion {
 					double miles;
 					DecimalFormat df = new DecimalFormat("0.00");
 					
-					miles = 0.9144*num;
+					miles = 0.621371*num;
 
-					System.out.print(num+ "kilometers equals "+df.format(miles)+ " miles ");
+					System.out.print(num+ " kilometers equals "+df.format(miles)+ " miles ");
+				}
+				
+				//Main Method to access relevant conversion
+				public static void main(String[] args)
+				{
+					double measurement;
+					int choice;
+					
+					Scanner input = new Scanner(System.in);
+					
+					System.out.print("Enter the measurement you want to convert: ");
+					measurement = input.nextDouble();
+					
+					System.out.println("Choose the conversion you want to do from the following:");
+					System.out.println("1. Inches to Centimeters         5. Centimeters to Inches");
+					System.out.println("2. Feet to Centimeters           6. Centimeters to Feet");
+					System.out.println("3. Yards to Meters               7. Yards to Meters");
+					System.out.println("4. Miles to Kilometers           8. Kilometers to Miles");
+					
+					choice = input.nextInt();
+					
+					input.close();
+					
+					switch (choice) {
+					case 1:
+						inchestoCentimeters(measurement);break;
+					case 2:
+						feettoCentimeters(measurement);break;
+					case 3:
+						yardstoMeters(measurement);break;
+					case 4:
+						milestoKilometers(measurement);break;
+					case 5:
+						centimeterstoInches(measurement);break;
+					case 6:
+						centimeterstoFeet(measurement);break;
+					case 7:
+						meterstoYards(measurement);break;
+					case 8:
+						kilometerstoMiles(measurement);break;
+					}
 				}
 }
