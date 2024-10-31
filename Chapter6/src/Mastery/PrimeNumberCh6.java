@@ -1,3 +1,15 @@
+/*
+
+Program: PrimeNumberCh6.java          Last Date of this Revision: October 29, 2024
+
+Purpose: An application that uses a method to check whether an inputed number is prime or not.
+
+Author: Aryan Kapoor, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 package Mastery;
 
 import java.util.Scanner;
@@ -16,6 +28,7 @@ public class PrimeNumberCh6 {
 		//At the end if remainder is nonzero or num is equal to divisor, num is prime
 		if(remainder != 0 || num == i)
 		{
+			
 			System.out.println(true);
 		}
 		
@@ -46,3 +59,16 @@ public class PrimeNumberCh6 {
 		
 	}
 }
+/* Screen Dump
+
+Case 1:
+Enter a number to check if it is prime: 15
+false
+
+Case 2:
+Enter a number to check if it is prime: 17
+true
+
+ 
+ */
+

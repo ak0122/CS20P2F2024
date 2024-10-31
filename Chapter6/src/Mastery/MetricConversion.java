@@ -1,3 +1,16 @@
+/*
+
+Program: MetricConversion.java          Last Date of this Revision: October 27, 2019
+
+Purpose: An application that uses methods to convert between multiple different measurements of length.
+
+Author: Aryan Kapoor, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
+
 package Mastery;
 
 import java.text.DecimalFormat;
@@ -134,3 +147,24 @@ public class MetricConversion {
 					}
 				}
 }
+/* Screen Dump
+ * Case 1:
+Enter the measurement you want to convert: 15
+Choose the conversion you want to do from the following:
+1. Inches to Centimeters         5. Centimeters to Inches
+2. Feet to Centimeters           6. Centimeters to Feet
+3. Yards to Meters               7. Yards to Meters
+4. Miles to Kilometers           8. Kilometers to Miles
+1
+15.0 inches equals 38.10 centimeters 
+
+ Case 2:
+ Enter the measurement you want to convert: 178
+Choose the conversion you want to do from the following:
+1. Inches to Centimeters         5. Centimeters to Inches
+2. Feet to Centimeters           6. Centimeters to Feet
+3. Yards to Meters               7. Yards to Meters
+4. Miles to Kilometers           8. Kilometers to Miles
+6
+178.0 centimeters equals 5.84 feet 
+ */
