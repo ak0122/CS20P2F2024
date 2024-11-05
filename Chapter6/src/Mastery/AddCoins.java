@@ -19,7 +19,7 @@ public class AddCoins {
 
 	//Method to find total amount in dollars.
 	//It takes in four parameters, 1 for each coin type.
-	public static void getDollarAmount(int num1,int num2, int num3, int num4)
+	public static String getDollarAmount(int num1,int num2, int num3, int num4)
 	{
 		//ensure the total money is always given to 2 dec places.
 		DecimalFormat df = new DecimalFormat("0.00");
@@ -35,6 +35,7 @@ public class AddCoins {
 		double total = q+d+n+p;
 		
 		System.out.print("Total: $"+df.format(total));
+		return null;
 	}
 	//Get total no. of each type of coin held by user.
 	public static void main(String[] args)
