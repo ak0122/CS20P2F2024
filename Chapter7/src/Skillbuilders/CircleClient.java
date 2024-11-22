@@ -27,14 +27,14 @@ public class CircleClient{
 		
 		if (c1.equals(c2))
 		{
-			System.out.print("The objects are equal.");
+			System.out.println("The objects are equal.");
 		}
 		else 
 		{
-			System.out.print("The objects are not equal.");
+			System.out.println("The objects are not equal.");
 		}
 		
-		c1.toString();
+		System.out.print(c1.toString());
 		
 	}
 

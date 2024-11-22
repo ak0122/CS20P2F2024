@@ -5,7 +5,7 @@ public class Circle {
 private static final double PI = 3.14;
 private double radius;
 
-
+//constructor method
 public Circle() {
 	radius = 1;
 }
@@ -59,7 +59,7 @@ public boolean equals(Object obj)
 	{
 		String circle;
 		
-		circle = "The Circle has a radius of + radius" ;
+		circle = "The Circle has a radius of " + radius ;
 		
 		return (circle);	
 }
