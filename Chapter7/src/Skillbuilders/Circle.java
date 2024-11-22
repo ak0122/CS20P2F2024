@@ -1,16 +1,16 @@
 package Skillbuilders;
 
-public class Circle1 {
+public class Circle {
 	
 private static final double PI = 3.14;
 private double radius;
-/*
-public Circle1() {
+
+
+public Circle() {
 	radius = 1;
 }
-*/
 
-public Circle1(double r) {
+public Circle(double r) {
 	 radius = r;
 	 }
 
@@ -35,9 +35,35 @@ double circleCircumference = 2*PI*radius;
 
 return(circleCircumference);
 }
+
 public static void displayAreaFormula() {
-	System.out.print("The formula for the area of a circle is area = PI*r*r");
+	System.out.println("The formula for the area of a circle is area = PI*r*r");	
 }
+
+public boolean equals(Object obj)
+{
+	Circle userObj = (Circle)obj ;
+	
+	if (userObj.getRadius() == radius)
+	{
+		return true;
+	}
+	else 
+	{
+		return false;
+	}
+}
+	
+	
+	public String toString()
+	{
+		String circle;
+		
+		circle = "The Circle has a radius of + radius" ;
+		
+		return (circle);	
+}
+	
 }
 
 
