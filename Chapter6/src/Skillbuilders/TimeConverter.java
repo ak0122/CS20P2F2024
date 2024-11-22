@@ -73,7 +73,7 @@ public class TimeConverter {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Choose the corresponding number to access the desired conversion:");
-		System.out.println("1: Hours to Minutes");
+		System.out.println("\n1: Hours to Minutes");
 		System.out.println("2: Days to Hours");
 		System.out.println("3: Minutes to Hours");
 		System.out.println("4: Hours to Days");

@@ -1,3 +1,14 @@
+/*
+Program: PrimeNumberA.java          Last Date of this Revision: October 18, 2024
+
+Purpose: An application which determines whether a number is prime or not
+
+Author: Aryan K, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 package Mastery;
 
 import java.util.*;
@@ -33,8 +44,15 @@ public class PrimeNumberA {
 		else 
 		{
 			System.out.print("The Number is NOT Prime");
-		}
-		
-		
+		}	
 	}
+	/* Screen Dump
+	 Case 1:
+	 Please Enter a Number: 14
+	The Number is NOT Prime
+	
+	 Case 2:
+	 Please Enter a Number: 3
+	 The Number is Prime
+	 */
 }

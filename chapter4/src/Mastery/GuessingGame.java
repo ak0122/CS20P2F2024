@@ -115,4 +115,3 @@ Computer's Guess: 6
 Player's Guess: 15
 Better luck next time.
 */
->>>>>>> branch 'master' of https://github.com/ak0122/CS20P2F2024.git
