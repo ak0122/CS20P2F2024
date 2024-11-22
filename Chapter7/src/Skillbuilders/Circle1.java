@@ -4,11 +4,6 @@ public class Circle1 {
 	
 private static final double PI = 3.14;
 private double radius;
-/*
-public Circle1() {
-	radius = 1;
-}
-*/
 
 public Circle1(double r) {
 	 radius = r;
