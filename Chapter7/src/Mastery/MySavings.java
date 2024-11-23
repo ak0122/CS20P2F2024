@@ -60,6 +60,7 @@ public class MySavings {
 					 double M_out = input.nextDouble();
 					 
 					System.out.println(userbank.takeM(M_out));
+					input.close();
 				
 			}
 
