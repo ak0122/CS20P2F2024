@@ -34,6 +34,9 @@ public class MySavings {
 				switch (choice)
 				{
 				
+				case 0:
+					System.out.println("Quitting the program.");
+				
 				case 1 : 
 					System.out.println(userbank.toString());
 					break;
