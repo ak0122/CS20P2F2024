@@ -3,7 +3,7 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class LunchOrder {
+public class LunchOrders {
 
 	    public static void main(String[] args) {
 	    	
