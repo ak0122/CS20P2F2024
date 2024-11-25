@@ -1,7 +1,6 @@
 package Mastery;
 
 public class Num {
-	
 	private int n;
 	
 	//Constructor to initialize my number
@@ -35,5 +34,4 @@ public class Num {
 		int h;
 		h = n/100;
 		return h;	
-	}
-}
+	}}
