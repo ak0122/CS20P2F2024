@@ -1,6 +1,6 @@
 package Mastery;
 
-import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 public class PiggyBank {
 
@@ -11,7 +11,7 @@ public class PiggyBank {
 	private double B;
 	
 	//decimal format to keep balances to proper number of digits of money
-	DecimalFormat df = new DecimalFormat("0.00");
+	NumberFormat nf = NumberFormat.getCurrencyInstance();
 	
 	// Constructor method to initialize balance value
 	public PiggyBank()
@@ -36,7 +36,7 @@ public class PiggyBank {
 	{
 		String B_string;
 		
-		B_string = "Your total Bank Balance is $"+ df.format(B);
+		B_string = "Your total Bank Balance is $"+ nf.format(B);
 		
 		return(B_string);
 	}
@@ -108,7 +108,7 @@ public class PiggyBank {
 		{
 		B -= M_out;
 		
-		money_out = "You have successfully taken out $" + df.format(M_out) + " from your bank account.";
+		money_out = "You have successfully taken out $" + nf.format(M_out) + " from your bank account.";
 		}
 		
 		return(money_out);

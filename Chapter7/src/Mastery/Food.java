@@ -2,7 +2,7 @@
 
 import java.text.DecimalFormat;
 
-public class foods {
+public class Food {
 
 		private String name;
 		private double price;
