@@ -17,7 +17,7 @@ public class MySavings {
 			PiggyBank userbank = new PiggyBank(initalB); 
 		
 		//Start While loop to keep coming back to options until user inputs 0
-			int choice = 10;
+			int choice = 1;
 			while(choice !=0)
 			{
 				//Ask user and present their choices
