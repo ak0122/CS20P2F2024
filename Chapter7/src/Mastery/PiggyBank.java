@@ -36,7 +36,7 @@ public class PiggyBank {
 	{
 		String B_string;
 		
-		B_string = "Your total Bank Balance is $"+ nf.format(B);
+		B_string = "Your total Bank Balance is "+ nf.format(B);
 		
 		return(B_string);
 	}
@@ -108,7 +108,7 @@ public class PiggyBank {
 		{
 		B -= M_out;
 		
-		money_out = "You have successfully taken out $" + nf.format(M_out) + " from your bank account.";
+		money_out = "You have successfully taken out " + nf.format(M_out) + " from your bank account.";
 		}
 		
 		return(money_out);

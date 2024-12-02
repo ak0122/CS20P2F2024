@@ -53,3 +53,50 @@ public class DigitExtractor {
 	}
 			System.out.println("Thank you for using the program.");
 }}
+/*
+Test Case:
+
+Enter an integer: 
+167
+show (W)hole number.
+show (O)nes Place number.
+show (T)ens Place number.
+show (H)hundreds Place number.
+(Q)uit
+Enter your Choice: 
+w
+Whole Number: 167
+show (W)hole number.
+show (O)nes Place number.
+show (T)ens Place number.
+show (H)hundreds Place number.
+(Q)uit
+Enter your Choice: 
+o
+Ones Digit: 7
+show (W)hole number.
+show (O)nes Place number.
+show (T)ens Place number.
+show (H)hundreds Place number.
+(Q)uit
+Enter your Choice: 
+t
+Tens Digit: 6
+show (W)hole number.
+show (O)nes Place number.
+show (T)ens Place number.
+show (H)hundreds Place number.
+(Q)uit
+Enter your Choice: 
+h
+Hundreds Digit: 1
+show (W)hole number.
+show (O)nes Place number.
+show (T)ens Place number.
+show (H)hundreds Place number.
+(Q)uit
+Enter your Choice: 
+q
+Quitting the program.
+Thank you for using the program.
+*/

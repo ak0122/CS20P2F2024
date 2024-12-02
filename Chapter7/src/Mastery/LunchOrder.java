@@ -46,19 +46,16 @@ public class LunchOrder {
 
 	        /* Test Cases 1
 	         *  
-	         * Enter the number of hamburgers: 
-			   5
+	         * Enter the number of hamburgers: 5
  			   Each hamburger has 9.0g of fat, 33.0g of carbs, and 1.0g of fiber
  			   
 			   Enter the number of salads: 2
 			   Each salad has 1.0g of fat, 11.0g of carbs, and 5.0g of fiber
 			   
-			   Enter the number of french fries: 
-			   5
+			   Enter the number of french fries: 5
 			   Each fries has 11.0g of fat, 36.0g of carbs, and 4.0g of fiber
 			   
-			   Enter the number of sodas: 
-			   6
+			   Enter the number of sodas: 6
 			   Each soda has 0.0g of fat, 38.0g of carbs, and 0.0g of fiber
 			   
 			   Your order comes to: $25.45 
