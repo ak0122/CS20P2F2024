@@ -20,31 +20,11 @@ public class Food {
 			fiber = fib;
 		}
 		
-		public String getName()
-		{
-			
-	        return name;
-	    }
 		
 		public double getPrice()
 		{
 			
 	        return price;
-	    }
-
-	    public int getFat()
-	    {
-	        return fat;
-	    }
-
-	    public int getCarbs()
-	    {
-	        return carbs;
-	    }
-
-	    public int getFiber() 
-	    {
-	        return fiber;
 	    }
 	    
 	    public String toString()
