@@ -7,8 +7,8 @@ public class DigitExtractor {
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
-		
-		System.out.println("Enter an integer: ");
+		//User Enters a 3 digit integer
+		System.out.println("Enter a 3-digit integer: ");
 		int usernum = input.nextInt();
 		
 		Num number = new Num(usernum);
