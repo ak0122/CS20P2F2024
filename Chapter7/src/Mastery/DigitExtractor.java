@@ -26,6 +26,7 @@ public class DigitExtractor {
 				System.out.println("Enter your Choice: ");
 				choice = input.next().toLowerCase().charAt(0);
 				
+				//Switch statement to access the different methods in our object
 				switch(choice)
 				{
 			  case 'w':
