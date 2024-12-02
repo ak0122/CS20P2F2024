@@ -1,3 +1,15 @@
+/*
+
+Program: MySavings.java          Last Date of this Revision: November 25, 2024
+
+Purpose: An application that uses object oriented programming to add, take away and show money in a bank balance.
+
+Author: Aryan K, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 package Mastery;
 
 import java.util.Scanner;

@@ -1,4 +1,16 @@
-	package Mastery;
+/*
+
+Program: LunchOrder.java          Last Date of this Revision: November 25, 2024
+
+Purpose: An application that uses object oriented programming make a lunch order, showing the total price of the order and the nutritional information for each meal.
+
+Author: Aryan K, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
+package Mastery;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;

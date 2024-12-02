@@ -1,3 +1,15 @@
+/*
+
+Program: DigitExtractor.java          Last Date of this Revision: November 26, 2024
+
+Purpose: An application that object oriented programming to find the value of the hundreds, tens and ones of any 3-digit integer.
+
+Author: Aryan K, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 package Mastery;
 
 import java.util.Scanner;
