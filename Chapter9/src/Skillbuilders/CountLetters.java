@@ -8,20 +8,20 @@ public class CountLetters {
 		 final int HIGH = 'Z'; //highest possible value
 		 int[] letterCounts = new int[HIGH - LOW + 1];
 		 Scanner input = new Scanner(System.in);
-		 String word;
-		 char[] wordLetters;
+		 String phrase;
+		 char[] phraseLetters;
 		 int offset; //array index
 
 		
-		 /* prompt user for a word */
-		 System.out.print("Enter a word: ");
-		 word = input.nextLine();
+		 /* prompt user for a phrase */
+		 System.out.print("Enter a phrase: ");
+		 phrase = input.nextLine();
 
 		 /* convert word to char array and count letter occurrences */
-		 word = word.toUpperCase();
-		 wordLetters = word.toCharArray();
-		 for (int letter = 0; letter < wordLetters.length; letter++) {
-		 offset = wordLetters[letter] - LOW;
+		 phrase = phrase.replaceAll("\\W", "").toUpperCase();
+		 phraseLetters = phrase.toCharArray();
+		 for (int letter = 0; letter < phraseLetters.length; letter++) {
+		 offset = phraseLetters[letter] - LOW;
 		 letterCounts[offset] += 1;
 		 }
 
