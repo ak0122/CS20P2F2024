@@ -19,18 +19,15 @@ public class Palindrome {
 		
 		char[] messageChar = message.toCharArray();
 		
-		System.out.println(messageChar);
-		
-		int length = messageChar.length;
-		System.out.println(length);
-		
 		ArrayList<Character> revMessage = new ArrayList<Character>();
 		
-		System.out.println(revMessage);
-		for(int i = 0; i< messageChar.length;i++)
+		
+		for(int i = messageChar.length-1; i>=0;i--)
 		{
-			revMessage.add(i, (char) (message.charAt(length)-i-1));
+			revMessage.add(messageChar[i]) ;
 		}
+		
+		System.out.println(revMessage);
 		
 		for(int j =0; j< messageChar.length;j++)
 		{
@@ -39,8 +36,11 @@ public class Palindrome {
 				System.out.println("Your phrase is NOT a Palindrome.");
 				break;
 			}
-			
+			else
+			{
+				System.out.println("Your phrase IS a Palindrome.");
+				break;
+			}	
 		}
-		
 	}
 }
