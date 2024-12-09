@@ -29,7 +29,7 @@ public class Palindrome {
 		System.out.println(revMessage);
 		for(int i = 0; i< messageChar.length;i++)
 		{
-			revMessage.add(i, (char) (message.charAt(length)-i));
+			revMessage.add(i, (char) (message.charAt(length)-i-1));
 		}
 		
 		for(int j =0; j< messageChar.length;j++)
