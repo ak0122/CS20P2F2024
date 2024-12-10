@@ -40,7 +40,7 @@ public void setGrades()
 	{
 		int location = -1;
 		
-			do {
+	do{
 		System.out.println("Enter the name of the student you want the grades for: ");
 		String student = input.nextLine();
 		
@@ -53,9 +53,55 @@ public void setGrades()
 		else
 		{
 			int studentno = location;
+			System.out.println(student + " has grades: ");
+			System.out.println(grades[studentno]);
 		}
 	 }
 			while(location == -1);
-			
 	}
+	
+	public void showGrades()
+	{
+		for(int row = 0; row < grades.length; row++)
+			 {
+			 	for (int col = 0; col < grades[0].length; col++)
+			 	{
+			 	System.out.print("[" + grades[row][col] + "]");
+			 	}
+			 System.out.println();
+			 }
 	}
+	
+	public double studentAvg(String name)
+	{
+		int location = Search.linear(studentName, name);
+		
+		double sum = 0;
+		
+		for(int i= 0; i <grades.length;i++)
+		{
+			sum += grades[location][i];
+		}
+		
+		 double avg_s = sum/5 ;
+		 
+		 return avg_s;
+	}
+	
+	public double testAvg(int testno)
+	{
+		
+		double sum = 0;
+		
+		for(int i= 0; i <grades[0].length;i++)
+		{
+			sum += grades[i][testno];
+		}
+		
+		 double avg_t = sum/12 ;
+		 
+		 return avg_t;
+	}
+	
+	
+}
