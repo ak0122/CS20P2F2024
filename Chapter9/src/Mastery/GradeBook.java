@@ -25,13 +25,13 @@ for (int row = 0; row < grades[0].length;row++)
 
 public void setGrades()
 {
-	for (int row = 0; row < grades.length;row++)
+	for (int row = 0; row < grades[0].length;row++)
 	{
 		System.out.println("Enter the grades for "+ studentName[row] + ": ");
-		for(int col = 0; col< grades[0].length;col++)
+		for(int col = 0; col< grades.length;col++)
 		{
-			System.out.println("Enter grade" + (col+1) + ": ");
-			grades[row][col] = input.nextInt();
+			System.out.println("Enter grade " + (col+1) + ": ");
+			grades[col][row] = input.nextInt();
 		}
 	}
 }
@@ -80,7 +80,7 @@ public void setGrades()
 		
 		for(int i= 0; i <grades.length;i++)
 		{
-			sum += grades[location][i];
+			sum += grades[i][location];
 		}
 		
 		 double avg_s = sum/5 ;
@@ -93,9 +93,9 @@ public void setGrades()
 		
 		double sum = 0;
 		
-		for(int i= 0; i <grades[0].length;i++)
+		for(int i= 0; i <grades.length;i++)
 		{
-			sum += grades[i][testno];
+			sum += grades[testno][i];
 		}
 		
 		 double avg_t = sum/12 ;
