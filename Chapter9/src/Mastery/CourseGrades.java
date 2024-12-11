@@ -9,8 +9,12 @@ public class CourseGrades {
 		
 		Scanner input = new Scanner(System.in);
 		
+		
 		GradeBook gb = new GradeBook(); 
+		
+		System.out.println("First, Please enter the grades of student");
 		gb.setName();
 		
+	
 	}
 }

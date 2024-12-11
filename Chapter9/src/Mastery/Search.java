@@ -3,22 +3,15 @@ package Mastery;
 public class Search {
 //Search Class apart of the Grades Application
 	
-	 public static int linear(String[] array, String wordToFind) {
-		 int index = 0;
-		 
-		 while ((array[index] != wordToFind) &&
-		 (index < array.length - 1))
+	 public static int linear(String[] array, String wordToFind)
+	 {
+		 for (int i = 0; i < array.length; i++)
 		 {
-		 index += 1;
+		        if (array[i].equals(wordToFind))
+		        {
+		            return i;
+		        }
 		 }
-
-		 if (array[index] == wordToFind)
-		 {
-		 return(index);
-		 } 
-		 
-		 else {
-		 return(-1);
-	}
-}
+		    return -1;
+	 }
 }

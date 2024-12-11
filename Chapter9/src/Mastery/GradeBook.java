@@ -8,7 +8,7 @@ Scanner input = new Scanner(System.in);
 
 private int[][] grades = new int[5][12];
 
-String[] studentName;
+String[] studentName = new String[12];
 
 int rows = grades.length;
 int cols = grades[0].length;
@@ -16,9 +16,9 @@ int cols = grades[0].length;
 public void setName()
 {
 
-for (int row = 0; row < grades.length;row++)
+for (int row = 0; row < grades[0].length;row++)
 {
-	System.out.println("Enter the student's name:" );
+	System.out.println("Enter the name of student " + (row+1) + ": " );
 	studentName[row] = input.nextLine();
 }
 }
