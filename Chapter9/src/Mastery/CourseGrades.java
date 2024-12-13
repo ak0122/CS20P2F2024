@@ -10,7 +10,7 @@ public class CourseGrades {
 		Scanner input = new Scanner(System.in);
 		
 		
-		GradeBook gb = new GradeBook(); 
+		Grades1 gb = new Grades1(); 
 		
 		System.out.println("First, Please enter the names of each student\n");
 		gb.setName();
@@ -31,7 +31,7 @@ public class CourseGrades {
 		System.out.println("0. QUIT Program ");
 		
 		choice = input.nextInt();
-			
+			input.nextLine();
 		switch(choice)
 		{
 		case 0: System.out.println("You have successfully quit the program.");
@@ -43,17 +43,37 @@ public class CourseGrades {
 				break;
 		
 		case 3:
-				System.out.print("Please enter the name of student whose average is required: ");
+				System.out.println("Please enter the name of student whose average is required: ");
 				String name = input.nextLine();
-				gb.studentAvg(name);
+				
+				if(gb.studentAvg(name) == -1)
+				{
+					System.out.println("INVALID test no. Please try again");
+				}
+				
+				else {
+				System.out.println(" The average score for "+ name + " is " + gb.studentAvg(name));
+				}
+				
 				break;
 			
 			
 		case 4: 
 				System.out.print("Enter the number of the test whose average is required: ");
 				int testnum = input.nextInt();
-				gb.testAvg(testnum);
+				
+				if(testnum == -1)
+				{
+					System.out.println("INVALID test no. Please try again");
+				}
+				
+				else {
+				
+				
+				System.out.println(" The average for this test was " + gb.testAvg(testnum));
+				
 				break;
+				}
 		}
 	}
 }
