@@ -1,3 +1,16 @@
+
+/*
+
+Program: EvensandOdds.java          Last Date of this Revision: December 15, 2025
+
+Purpose: An application which creates a list of 25 random numbers and separates them into evens and odds.
+
+Author: Aryan K, 
+School: CHHS
+Course: Computer Programming 20
+ 
+
+*/
 package Mastery;
 
 import java.util.ArrayList;
@@ -46,3 +59,12 @@ public class EvensandOdds {
 			System.out.println(evenList);
 	}
 }
+
+/* Screen Dump
+
+ODD:
+[1, 3, 61, 69, 63, 87, 39, 35, 19, 17, 19, 25, 19]
+EVEN
+[40, 20, 96, 78, 4, 56, 14, 62, 90, 84, 98, 84]
+ 
+ */
