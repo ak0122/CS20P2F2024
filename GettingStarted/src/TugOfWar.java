@@ -1,5 +1,5 @@
-import com.phidget22.DigitalInput;
-import com.phidget22.DigitalOutput;
+import com.phidget22.*;
+
 
 public class TugOfWar {
     public static void main(String[] args) throws Exception{
