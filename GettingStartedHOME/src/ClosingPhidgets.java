@@ -15,6 +15,8 @@ public class ClosingPhidgets {
         
         //Close your Phidgets
         temperatureSensor.close();
+        System.out.println("Temperature Sensor Was Closed ");
+        
         
         temperatureSensor.open(1000);
         

@@ -1,4 +1,4 @@
-import com.phidget22.*;
+import com.phidget22.DigitalInput;
 
 public class ReadButton {
 	//Handle Exceptions 

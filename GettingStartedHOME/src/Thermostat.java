@@ -2,6 +2,9 @@
 import com.phidget22.*;
 
 public class Thermostat {
+	
+	private static double setT = 21;
+	
 	 public static void main(String[] args) throws Exception{
 			//Create 
 		    HumiditySensor humiditySensor = new HumiditySensor();
@@ -28,12 +31,27 @@ public class Thermostat {
 	        greenButton.open(1000);
 	        greenLED.open(1000);
 	        
-	        double setT = 21;
+	        
+	        double previousSetT = setT;
+	        
+	        
+	        
+	        temperatureSensor.addTemperatureChangeListener(new TemperatureSensorTemperatureChangeListener() {
+	            public void onTemperatureChange(TemperatureSensorTemperatureChangeEvent e) {
+	                //Print temperature
+	                System.out.println("Temperature: " + e.getTemperature() + "°C");
+	                System.out.println("Set Temperature: " + setT);
+	                
+	            }
+	        });
+	        
+	        temperatureSensor.setDataInterval(10000);
 	        
 	      while(true)  
 	      {   
-		      
-	      if(greenButton.getState())
+	    	  if (setT == previousSetT) {
+	    		  
+	              if(greenButton.getState())
 	      {
 	    	  setT += 1;
 	    	  System.out.println("You have increased the temperature to " + setT);
@@ -46,6 +64,10 @@ public class Thermostat {
 	    	  System.out.println("You have decreased the temperature to " + setT);
 	    	  Thread.sleep(150);
 	      }
+	              
+	              previousSetT = setT;
+	          }
+	      
 	      
 	      
 	      if(Math.abs( setT-(temperatureSensor.getTemperature()) ) < 2)
@@ -59,12 +81,8 @@ public class Thermostat {
 	    	  greenLED.setState(false);
 	    	  redLED.setState(true);
 	      }
-	      
-	      System.out.println("Current Temperature: " + temperatureSensor.getTemperature());
-	      System.out.println("Set Temperature: " + setT);
-	      
-	      
-	      Thread.sleep(10000);
+
+	      Thread.sleep(250);
 	 }
 }
 }

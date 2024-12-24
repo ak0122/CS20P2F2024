@@ -1,6 +1,6 @@
 //Add Phidgets Library
 	import com.phidget22.*;
-public class ButtonAndLED {
+public class ButtonAndLEDEvents {
 	  
 	
 
@@ -41,8 +41,8 @@ public class ButtonAndLED {
 	                //Record button state to turn on/off the red LED
 	                if(e.getState())
 	                {
-	                	player1 += 1;
 	                	turnRedLEDOn = true;
+	                	player1 += 1;
 	                	System.out.println("Player 1: " + player1);
 	                }
 	                
@@ -58,8 +58,8 @@ public class ButtonAndLED {
 	            public void onStateChange(DigitalInputStateChangeEvent e) {
 	                //Record button state to turn on/off the green LED
 	            	if(e.getState()) {
+	            	turnGreenLEDOn = true;
 	            	player2+=1;
-	                turnGreenLEDOn = true;
 	                System.out.println("Player 2: " + player2);
 	                
 	            }
@@ -72,22 +72,24 @@ public class ButtonAndLED {
 
 	        
 
-	        System.out.print("Player 1 is Red and Player 2 is Green");
+	        System.out.println("Player 1 is Red and Player 2 is Green");
 	        
 	        while(player1 < 10 && player2 < 10) {
 	            //turn red LED on based on red button input
 	            redLED.setState(turnRedLEDOn);
 	            //turn green LED on based on green button input
 	            greenLED.setState(turnGreenLEDOn);
-	            //sleep for 150 milliseconds 
-	            Thread.sleep(150);
+	            //sleep for 50 milliseconds 
+	            Thread.sleep(50);
   
 	        }
 	        
+	        redButton.close();
+        	greenButton.close();
+        	
 	        if(player1 == 10) {
-	        	redButton.close();
-	        	greenButton.close();
 	        	
+	        	greenLED.close();
 	        	System.out.print("Player 1 Wins!");
 	        	
 	        	for(int i = 0; i<5; i++)
@@ -100,8 +102,7 @@ public class ButtonAndLED {
 	        }
 	       else {
 	    	   System.out.print("Player 2 Wins!");
-	    	   redButton.close();
-	        	greenButton.close();
+	    	   redLED.close();
 	        	for(int i = 0; i<5; i++)
 	        	{
 	        		 greenLED.setState(true);

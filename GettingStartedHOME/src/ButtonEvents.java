@@ -2,6 +2,7 @@ import com.phidget22.*;
 
 public class ButtonEvents {
 
+	static boolean turnGreenLEDon = false;
 	 //Handle Exceptions
     public static void main(String[] args) throws Exception {
        
@@ -22,13 +23,13 @@ public class ButtonEvents {
 
         //Event 
         redButton.addStateChangeListener(new DigitalInputStateChangeListener() {
-            public void onStateChange(DigitalInputStateChangeEvent e1) {
-                 if (e1.getState() == true)
+            public void onStateChange(DigitalInputStateChangeEvent e) {
+                 if (e.getState() == true)
                  {
                 	 System.out.println("Pressed");
                  }
                  
-                 else if (e1.getState() == false)
+                 else if (e.getState() == false)
                  {
                 	 System.out.println("Not Pressed");
                  }
@@ -36,25 +37,15 @@ public class ButtonEvents {
         });
         
         greenButton.addStateChangeListener(new DigitalInputStateChangeListener() {
-            public void onStateChange(DigitalInputStateChangeEvent e2) {
-                 if (e2.getState() == true)
+            public void onStateChange(DigitalInputStateChangeEvent e) {
+                 if (e.getState())
                  {
-                	 try {
-						greenLED.setState(true);
-					} catch (PhidgetException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
+                	 turnGreenLEDon = true;
                  }
                  
-                 else if (e2.getState() == false)
+                 else
                  {
-                	 try {
-						greenLED.setState(false);
-					} catch (PhidgetException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					} 
+                	 turnGreenLEDon = false;
                  }
             }
         });
@@ -65,7 +56,8 @@ public class ButtonEvents {
 
         //Keep program running
         while (true) {
-            Thread.sleep(5000);
+            Thread.sleep(10);
+            greenLED.setState(turnGreenLEDon);
         }
     }
 }
