@@ -40,15 +40,19 @@ public class TugOfWar {
         		
         		
         		System.out.println("Player 1: " + player1);
+        		
+        		Thread.sleep(150);
         	}
         	
         	
         	if(greenButton.getState())
         	{
         		player2++;
-        		Thread.sleep(250);
+        		
         		
         		System.out.println("Player 2: " + player2);
+        		
+        		Thread.sleep(150);
         	}
         	Thread.sleep(100);
         }

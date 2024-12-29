@@ -5,12 +5,10 @@ public class ReadButton {
     public static void main(String[] args) throws Exception{
         
         //Create 
-        DigitalInput redButton = new DigitalInput();
         DigitalInput greenButton = new DigitalInput();
         
         //Address 
-        redButton.setHubPort(0);
-        redButton.setIsHubPortDevice(true);
+
         greenButton.setHubPort(5);
         greenButton.setIsHubPortDevice(true);
 
@@ -18,17 +16,15 @@ public class ReadButton {
         greenButton.open(1000);
         
 
-        //Use your Phidgets 
-        while(true){
-            boolean state_i = false;
-            
-            boolean state_f = greenButton.getState();
-        	if (state_i != state_f )
-        	{
+        //Use your Phidgets
+        boolean state_i = greenButton.getState();
+        while(true) {
+        	boolean state_f = greenButton.getState();
+        	if(state_f != state_i) {
             System.out.println("Button State: " + greenButton.getState());
+            state_i = state_f;
+        	}
             Thread.sleep(150);
-        }
+        }	
     }
 }
-}
-  
