@@ -19,7 +19,7 @@ public class DataInterval {
 	        });
 
 	        //Set Data Interval
-	        temperatureSensor.setDataInterval(60	000);
+	        temperatureSensor.setDataInterval(60000);
 
 	        //Keep program running
 	        while (true) {
